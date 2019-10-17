@@ -1,0 +1,22 @@
+How to execute tests
+
+NOTE : Test case 1 is failing because there are lots of records appearing in the response and I can't delet those 
+as there is not fixtureId. 
+So we need to delet those 1st in the database and then all will be fine.
+
+
+Following are the instructions to execute the code::
+
+1. Run following command from command prompt or witin intellij terminal
+mvn test -Denvironment=LOCAL
+
+2. Once test run, go to the folder target/cucumber-html-reports/
+and open the file overview-features.html
+
+this will show the report.
+
+3. All the logs are saved in APITests.log file inside the root folder.
+
+4. Data like api url's , fixture which needs to be created or deleted are getting fetched from
+   config.properties file.
+
